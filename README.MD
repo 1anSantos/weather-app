@@ -1,14 +1,30 @@
 # Weather App
 
-### Código de Países (ISO 3166-1 ALPHA-2)
-- https://servicodados.ibge.gov.br/api/docs/paises
+Projeto de PWEB | Turma 922-A
 
-### Clima
-- https://openweathermap.org/api/one-call-3
+Orientador: Leo Fernandes
 
-### Localização
-- https://openweathermap.org/api/geocoding-api
+
+## Integrantes
+* [Ian dos Santos](https://github.com/1anSantos)
+* [Mayara Lins](https://github.com/luzuramay)
+* [Luiza Alves](https://github.com/luizaalvez)
+
+
+## APIs
+
+**Código de Países (ISO 3166-1 ALPHA-2)**
+
+    https://servicodados.ibge.gov.br/api/docs/paises
+
+**Clima**
+
+    https://openweathermap.org/api/one-call-3
+
+**Localização**
+
+    https://openweathermap.org/api/geocoding-api
 
 ## Referências
 - Promise:
-    - https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Promise
+    https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Promise
