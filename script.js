@@ -30,7 +30,8 @@ function getWeatherByAPI() {
                     weatherResult.innerHTML = `
                         <h2>Clima em ${data.name}, ${countryName}</h2>
                         <p>Temperatura: ${data.main.temp}°C</p>
-                        <p>Tempo: ${data.weather[0].description}</p>`;
+                        <p>Tempo: ${data.weather[0].description}</p>
+                        <img src="https://flagcdn.com/h60/${data.sys.country.toLowerCase()}.png" alt="${countryName}">`;
                 })
                 .catch(error => {
                     console.error('Ocorreu um erro ao obter o nome do país:', error);
