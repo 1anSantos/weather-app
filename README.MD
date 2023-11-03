@@ -26,5 +26,5 @@ Orientador: Leo Fernandes
     https://openweathermap.org/api/geocoding-api
 
 ## Referências
-- Promise:
-    https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Promise
+* Promise:
+    - https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Promise
