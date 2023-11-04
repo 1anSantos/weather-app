@@ -28,10 +28,18 @@ function getWeatherByAPI() {
                 .then(countryName => {
                     console.log(data)
                     weatherResult.innerHTML = `
+                        <div style="display: flex; align-items: center">
+                            <img src="https://flagcdn.com/h60/${data.sys.country.toLowerCase()}.png" alt="${countryName}">
+                            <img src="https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png">
+                        </div>
                         <h2>Clima em ${data.name}, ${countryName}</h2>
-                        <p>Temperatura: ${data.main.temp}°C</p>
                         <p>Tempo: ${data.weather[0].description}</p>
-                        <img src="https://flagcdn.com/h60/${data.sys.country.toLowerCase()}.png" alt="${countryName}">`;
+                        <p>Umidade: ${data.main.humidity}%</p>
+                        <p>Temperatura: ${data.main.temp}°C</p>
+                        <p>Sensação Térmica: ${data.main.feels_like}°C</p>
+                        <p>Vento: ${data.wind.speed}m/s</p>
+                        <p>Nuvens: ${data.clouds.all}%</p>
+                        `;
                 })
                 .catch(error => {
                     console.error('Ocorreu um erro ao obter o nome do país:', error);
