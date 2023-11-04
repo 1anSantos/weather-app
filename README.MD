@@ -27,11 +27,8 @@ Orientador: Leo Fernandes
 
 **Bandeiras**
 
-ainda em teste:
-
     https://www.bandeirasnacionais.com/paises-baixos/baixar/api
 
-    https://api-paises.pages.dev/paises.json
 
 ## Referências
 * Promise:
