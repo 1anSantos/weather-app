@@ -15,7 +15,7 @@ Orientador: Leo Fernandes
 
 **Clima**
 
-    https://openweathermap.org/api/one-call-3
+    https://openweathermap.org/current
 
 **Localização**
 
