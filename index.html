@@ -4,15 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <h1>Weather App</h1>
-    <label for="city-input">Cidade:</label>
-    <input id="city-input" type="text" placeholder="Digite o nome da cidade">
-    <button id="get-weather">Obter Previsão</button>
+    <header class="text-center mb-3">
+        <h1 class="display-6">
+            <i class="fa-solid fa-cloud"></i>
+            <strong>Weather App</strong>
+            <i class="fa-solid fa-cloud-sun"></i>
+        </h1>
+    </header>
+    <nav class="input-group mb-3">
+        <span class="input-group-text">
+            <label for="city-input">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </label>
+        </span>
+        <div class="form-floating">
+            <input id="city-input" class="form-control" type="text" placeholder="Cidade">
+            <label for="city-input">Cidade</label>
+        </div>
+        <button id="get-weather" class="btn btn-outline-secondary">
+            Obter Previsão
+        </button>
+    </nav>
     <div id="weather-result"></div>
 
     <script src="./script.js"></script>
+    <script src="https://kit.fontawesome.com/b03cf2bbe7.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>

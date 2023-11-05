@@ -32,7 +32,8 @@ function getWeatherByAPI() {
                             <img src="https://flagcdn.com/h60/${data.sys.country.toLowerCase()}.png" alt="${countryName}">
                             <img src="https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png">
                         </div>
-                        <h2>Clima em ${data.name}, ${countryName}</h2>
+                        <h2 class="display-3">Clima em ${data.name}, ${countryName}</h2>
+                        
                         <p>Tempo: ${data.weather[0].description}</p>
                         <p>Umidade: ${data.main.humidity}%</p>
                         <p>Temperatura: ${data.main.temp}°C</p>
