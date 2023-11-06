@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" data-bs-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,28 +9,78 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <header class="text-center mb-3">
-        <h1 class="display-6">
-            <i class="fa-solid fa-cloud"></i>
-            <strong>Weather App</strong>
-            <i class="fa-solid fa-cloud-sun"></i>
-        </h1>
-    </header>
-    <nav class="input-group mb-3">
-        <span class="input-group-text">
-            <label for="city-input">
-                <i class="fa-solid fa-magnifying-glass"></i>
-            </label>
-        </span>
-        <div class="form-floating">
-            <input id="city-input" class="form-control" type="text" placeholder="Cidade">
-            <label for="city-input">Cidade</label>
+    <div class="celular">
+
+        <nav class="input-group mb-3">
+            <span class="input-group-text">
+                <label for="city-input">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </label>
+            </span>
+            <div class="form-floating">
+                <input id="city-input" class="form-control" type="text" placeholder="Cidade">
+                <label for="city-input">Cidade</label>
+            </div>
+            <button id="get-weather" class="btn btn-dark border-light-subtle">
+                Obter Previsão
+            </button>
+        </nav>
+
+        <div id="weather-result">
+            <div id="weather">
+                <h2 id="city">Cidade</h2>
+                <div style="align-items: center;" class="d-flex justify-content-center">
+                    <img id="country-img" src="">
+                    <p id="country" class="subtitle">País</p>
+                </div>
+                <div id="weather-img-container" style="display: none">
+                    <img id="weather-img" src="">
+                </div>
+                <p id="temperature">0<span>°C</span></p>
+                <p id="description">Nublado</p>
+            </div>
+
+            <div id="weather-details">
+                <div id="fells-like" class="details">
+                    <i class="fa-solid fa-temperature-three-quarters"></i>
+                    <div class="details-text">
+                        <div class="information">
+                            <span>0 °C</span>
+                        </div>
+                        <p class="subtitle">Sensação Térmica</p>
+                    </div>
+                </div>
+                <div id="cloud" class="details">
+                    <i class="fa-solid fa-cloud"></i>
+                    <div class="details-text">
+                        <div class="information">
+                            <span>0 m/s</span>
+                        </div>
+                        <p class="subtitle">Nuvem</p>
+                    </div>
+                </div>
+                <div id="humidity" class="details">
+                    <i class="fa-solid fa-droplet"></i>
+                    <div class="details-text">
+                        <div class="information">
+                            <span>0%</span>
+                        </div>
+                        <p class="subtitle">Umidade</p>
+                    </div>
+                </div>
+                <div id="wind" class="details">
+                    <i class="fa-solid fa-wind"></i>
+                    <div class="details-text">
+                        <div class="information">
+                            <span>0 m/s</span>
+                        </div>
+                        <p class="subtitle">Vento</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <button id="get-weather" class="btn btn-secondary">
-            Obter Previsão
-        </button>
-    </nav>
-    <div id="weather-result"></div>
+
+    </div>
 
     <script src="./script.js"></script>
     <script src="https://kit.fontawesome.com/b03cf2bbe7.js" crossorigin="anonymous"></script>
