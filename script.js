@@ -6,22 +6,24 @@ const cityInput = document.querySelector("#city-input");
 const getWeatherBtn = document.querySelector("#get-weather");
 
 // Elementos HTML
-// Cidade e País
-const city = document.querySelector("#city");
-const country = document.querySelector("#country");
-const countryImg = document.querySelector("#country-img");
+    // Cidade e País
+    const cityTitle = document.querySelector("#city");
+    const country = document.querySelector("#country");
+    const countryImg = document.querySelector("#country-img");
 
-// Temperatura e Clima
-const weatherImgContainer = document.querySelector("#weather-img-container");
-const weatherImg = document.querySelector("#weather-img");
-const temperature = document.querySelector("#temperature");
-const description = document.querySelector("#description");
+    // Temperatura e Clima
+    const weatherImgContainer = document.querySelector("#weather-img-container");
+    const weatherImg = document.querySelector("#weather-img");
+    const temperature = document.querySelector("#temperature");
+    const description = document.querySelector("#description");
 
-// Informações Adicionais
-const fellsLike = document.querySelector("#fells-like .information span");
-const cloud = document.querySelector("#cloud .information span");
-const humidity = document.querySelector("#humidity .information span");
-const wind = document.querySelector("#wind .information span");
+    // Informações Adicionais
+    const fellsLike = document.querySelector("#fells-like .information span");
+    const cloud = document.querySelector("#cloud .information span");
+    const humidity = document.querySelector("#humidity .information span");
+    const wind = document.querySelector("#wind .information span");
+
+
 
 // Event Listeners
 cityInput.addEventListener("keydown", (event) =>{
@@ -30,6 +32,7 @@ cityInput.addEventListener("keydown", (event) =>{
 });
 
 getWeatherBtn.addEventListener("click", getWeatherByAPI);
+
 
 
 // Functions
@@ -47,7 +50,7 @@ function getWeatherByAPI() {
                     weatherImgContainer.style.display = "block";
 
                     // Cidade, País e Bandeira
-                    city.innerHTML = data.name;
+                    cityTitle.innerHTML = data.name;
                     country.innerHTML = countryName;
                     countryImg.src = `https://flagcdn.com/h20/${data.sys.country.toLowerCase()}.png`;
                     
